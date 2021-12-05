@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, Alert} from "react-native";
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, Alert, Button } from "react-native";
 import styles from "./Styles";
 import { signIn, store } from './SigninReducer';
 
@@ -9,7 +9,7 @@ export default function Login() {
 
   //Post user data to back to authenticate 
   const postData = () => {
-    const data = { 'username': username.toLowerCase(), 'password': password };
+    const data = { 'username': username, 'password': password };
     fetch('http://bloom-app.azurewebsites.net/token-auth/',
       {
         method: 'POST',
@@ -59,9 +59,8 @@ export default function Login() {
           onChangeText={(password) => setPassword(password)}
         />
       </View>
-      <TouchableOpacity onPress={postData} style={styles2.loginBtn}>
-        <Text>LOGIN</Text>
-      </TouchableOpacity>
+      <Button onPress={postData} style={styles2.loginBtn} title="Login">
+      </Button>
     </View>
   );
 }
@@ -75,8 +74,8 @@ const styles2 = StyleSheet.create({
   },
   title: {
     fontFamily: 'serif',
-    fontSize: 20, 
-    marginBottom: 30, 
+    fontSize: 20,
+    marginBottom: 30,
   },
   inputView: {
     backgroundColor: "#fff",

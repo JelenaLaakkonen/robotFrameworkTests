@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211126 11:22:40.743" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\Jelen\ohjelmistoprojekti2\BLOOM-frontend\tests">
+<suite id="s1-s1" name="Test" source="C:\Users\Jelen\ohjelmistoprojekti2\BLOOM-frontend\tests\test.robot">
+<test id="s1-s1-t1" name="Test">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554 appPackage=host.exp.exponent</arg>
+<arg>appActivity=host.exp.exponent.LauncherActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20211126 11:22:40.980" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554 appPackage=host.exp.exponent' | appActivity='host.exp.exponent.LauncherActivity' | automationName='Uiautomator2' ]</msg>
+<msg timestamp="20211126 11:22:43.016" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:deviceName": "emulator-5554 appPackage=host.exp.exponent", "appium:appActivity": "host.exp.exponent.LauncherActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"platformName": "Android", "deviceName": "emulator-5554 appPackage=host.exp.exponent", "appActivity": "host.exp.exponent.LauncherActivity", "automationName": "Uiautomator2"}}</msg>
+<msg timestamp="20211126 11:22:43.062" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20211126 11:22:49.087" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 888</msg>
+<msg timestamp="20211126 11:22:49.095" level="DEBUG">Finished Request</msg>
+<msg timestamp="20211126 11:22:49.096" level="DEBUG">Opened application with session id 8bb303bb-e3ab-407d-957a-1a4307c7710d</msg>
+<msg timestamp="20211126 11:22:49.096" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20211126 11:22:40.980" endtime="20211126 11:22:49.096"/>
+</kw>
+<status status="PASS" starttime="20211126 11:22:40.979" endtime="20211126 11:22:49.097"/>
+</test>
+<doc>This is my first test case</doc>
+<status status="PASS" starttime="20211126 11:22:40.773" endtime="20211126 11:22:49.098"/>
+</suite>
+<status status="PASS" starttime="20211126 11:22:40.744" endtime="20211126 11:22:49.103"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
