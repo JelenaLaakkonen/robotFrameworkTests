@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211203 14:05:59.835" rpa="false" schemaversion="2">
-<suite id="s1" name="Tests" source="C:\Users\Jelen\ohjelmistoprojekti2\BLOOM-frontend\tests">
-<suite id="s1-s1" name="1Login" source="C:\Users\Jelen\ohjelmistoprojekti2\BLOOM-frontend\tests\1login.robot">
-<test id="s1-s1-t1" name="Test">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211205 17:03:58.383" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\Jelen\ohjelmistoprojekti2\robotframworktests\tests">
+<suite id="s1-s1" name="1Login" source="C:\Users\Jelen\ohjelmistoprojekti2\robotframworktests\tests\1login.robot">
+<test id="s1-s1-t1" name="Login">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>platformName=Android</arg>
@@ -14,82 +14,82 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20211203 14:06:00.040" endtime="20211203 14:06:07.728"/>
+<status status="PASS" starttime="20211205 17:03:58.644" endtime="20211205 17:04:05.221"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${LOGIN-SUBMIT-BUTTON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20211203 14:06:07.729" endtime="20211203 14:06:08.316"/>
+<status status="PASS" starttime="20211205 17:04:05.222" endtime="20211205 17:04:05.773"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${LOGIN-USER-FIELD}</arg>
 <arg>${USER2-DETAILS}[Username]</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:08.319" level="INFO">Typing text 'Marjo' into text field '//android.widget.EditText[contains(@text, "Username")]'</msg>
-<status status="PASS" starttime="20211203 14:06:08.317" endtime="20211203 14:06:08.947"/>
+<msg timestamp="20211205 17:04:05.775" level="INFO">Typing text 'Marjo' into text field '//android.widget.EditText[contains(@text, "Username")]'</msg>
+<status status="PASS" starttime="20211205 17:04:05.773" endtime="20211205 17:04:05.883"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${LOGIN-PASSWORD-FIELD}</arg>
 <arg>${USER2-DETAILS}[Password]</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:08.953" level="INFO">Typing text 'Marjo2' into text field '//android.widget.EditText[contains(@text, "Password")]'</msg>
-<status status="PASS" starttime="20211203 14:06:08.950" endtime="20211203 14:06:10.103"/>
+<msg timestamp="20211205 17:04:05.885" level="INFO">Typing text 'Marjo2' into text field '//android.widget.EditText[contains(@text, "Password")]'</msg>
+<status status="PASS" starttime="20211205 17:04:05.884" endtime="20211205 17:04:07.011"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${LOGIN-SUBMIT-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:10.107" level="INFO">Clicking element '//android.widget.Button[@index=4]'.</msg>
-<status status="PASS" starttime="20211203 14:06:10.104" endtime="20211203 14:06:10.726"/>
+<msg timestamp="20211205 17:04:07.016" level="INFO">Clicking element '//android.widget.Button[@index=4]'.</msg>
+<status status="PASS" starttime="20211205 17:04:07.012" endtime="20211205 17:04:07.630"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${OK-BUTTON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20211203 14:06:10.726" endtime="20211203 14:06:11.659"/>
+<status status="PASS" starttime="20211205 17:04:07.633" endtime="20211205 17:04:09.065"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${OK-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:11.661" level="INFO">Clicking element '//android.widget.Button[@index=0]'.</msg>
-<status status="PASS" starttime="20211203 14:06:11.660" endtime="20211203 14:06:12.225"/>
+<msg timestamp="20211205 17:04:09.067" level="INFO">Clicking element '//android.widget.Button[@index=0]'.</msg>
+<status status="PASS" starttime="20211205 17:04:09.065" endtime="20211205 17:04:09.153"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${FILLED-USER-FIELD}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:12.227" level="INFO">Clear text field '//android.widget.EditText[contains(@text, "Marjo")]'</msg>
-<status status="PASS" starttime="20211203 14:06:12.225" endtime="20211203 14:06:12.856"/>
+<msg timestamp="20211205 17:04:09.155" level="INFO">Clear text field '//android.widget.EditText[contains(@text, "Marjo")]'</msg>
+<status status="PASS" starttime="20211205 17:04:09.153" endtime="20211205 17:04:09.788"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${FILLED-PASSWORD-FIELD}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:12.859" level="INFO">Clear text field '//android.widget.EditText[contains(@text, "••••••")]'</msg>
-<status status="PASS" starttime="20211203 14:06:12.857" endtime="20211203 14:06:13.431"/>
+<msg timestamp="20211205 17:04:09.790" level="INFO">Clear text field '//android.widget.EditText[contains(@text, "••••••")]'</msg>
+<status status="PASS" starttime="20211205 17:04:09.789" endtime="20211205 17:04:10.376"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${LOGIN-USER-FIELD}</arg>
 <arg>${USER1-DETAILS}[Username]</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:13.433" level="INFO">Typing text 'Matti' into text field '//android.widget.EditText[contains(@text, "Username")]'</msg>
-<status status="PASS" starttime="20211203 14:06:13.432" endtime="20211203 14:06:14.544"/>
+<msg timestamp="20211205 17:04:10.380" level="INFO">Typing text 'Matti' into text field '//android.widget.EditText[contains(@text, "Username")]'</msg>
+<status status="PASS" starttime="20211205 17:04:10.378" endtime="20211205 17:04:11.450"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${LOGIN-PASSWORD-FIELD}</arg>
 <arg>${USER1-DETAILS}[Password]</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:14.547" level="INFO">Typing text '2611MAMA' into text field '//android.widget.EditText[contains(@text, "Password")]'</msg>
-<status status="PASS" starttime="20211203 14:06:14.545" endtime="20211203 14:06:15.633"/>
+<msg timestamp="20211205 17:04:11.455" level="INFO">Typing text '2611MAMA' into text field '//android.widget.EditText[contains(@text, "Password")]'</msg>
+<status status="PASS" starttime="20211205 17:04:11.451" endtime="20211205 17:04:12.528"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${LOGIN-SUBMIT-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:15.637" level="INFO">Clicking element '//android.widget.Button[@index=4]'.</msg>
-<status status="PASS" starttime="20211203 14:06:15.634" endtime="20211203 14:06:16.234"/>
+<msg timestamp="20211205 17:04:12.535" level="INFO">Clicking element '//android.widget.Button[@index=4]'.</msg>
+<status status="PASS" starttime="20211205 17:04:12.531" endtime="20211205 17:04:13.149"/>
 </kw>
-<status status="PASS" starttime="20211203 14:06:00.040" endtime="20211203 14:06:16.235"/>
+<status status="PASS" starttime="20211205 17:03:58.643" endtime="20211205 17:04:13.150"/>
 </test>
-<status status="PASS" starttime="20211203 14:05:59.863" endtime="20211203 14:06:16.236"/>
+<status status="PASS" starttime="20211205 17:03:58.458" endtime="20211205 17:04:13.152"/>
 </suite>
-<suite id="s1-s2" name="2Flower" source="C:\Users\Jelen\ohjelmistoprojekti2\BLOOM-frontend\tests\2flower.robot">
-<test id="s1-s2-t1" name="Test">
+<suite id="s1-s2" name="2Input" source="C:\Users\Jelen\ohjelmistoprojekti2\robotframworktests\tests\2input.robot">
+<test id="s1-s2-t1" name="Input">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>platformName=Android</arg>
@@ -101,187 +101,173 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20211203 14:06:16.243" endtime="20211203 14:06:22.826"/>
+<status status="PASS" starttime="20211205 17:04:13.160" endtime="20211205 17:04:20.880"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${INPUT-FIELD}</arg>
 <arg>${INPUT-DETAILS}[TextGood]</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:22.828" level="INFO">Typing text 'I feel very good' into text field '//android.widget.EditText[@index=1]'</msg>
-<status status="PASS" starttime="20211203 14:06:22.827" endtime="20211203 14:06:23.393"/>
+<msg timestamp="20211205 17:04:20.882" level="INFO">Typing text 'I feel very good' into text field '//android.widget.EditText[@index=1]'</msg>
+<status status="PASS" starttime="20211205 17:04:20.881" endtime="20211205 17:04:21.402"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${SUBMIT-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:23.395" level="INFO">Clicking element '//android.view.ViewGroup[@index=2]'.</msg>
-<status status="PASS" starttime="20211203 14:06:23.393" endtime="20211203 14:06:24.026"/>
+<msg timestamp="20211205 17:04:21.404" level="INFO">Clicking element '//android.view.ViewGroup[@index=2]'.</msg>
+<status status="PASS" starttime="20211205 17:04:21.402" endtime="20211205 17:04:22.033"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${OK-BUTTON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20211203 14:06:24.026" endtime="20211203 14:06:30.145"/>
+<status status="PASS" starttime="20211205 17:04:22.035" endtime="20211205 17:04:23.867"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${OK-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:30.148" level="INFO">Clicking element '//android.widget.Button[@index=0]'.</msg>
-<status status="PASS" starttime="20211203 14:06:30.146" endtime="20211203 14:06:30.241"/>
+<msg timestamp="20211205 17:04:23.868" level="INFO">Clicking element '//android.widget.Button[@index=0]'.</msg>
+<status status="PASS" starttime="20211205 17:04:23.867" endtime="20211205 17:04:23.969"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${ALERT-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:30.243" level="INFO">Clicking element '//android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='2']'.</msg>
-<status status="PASS" starttime="20211203 14:06:30.241" endtime="20211203 14:06:30.876"/>
+<msg timestamp="20211205 17:04:23.971" level="INFO">Clicking element '//android.view.ViewGroup[@index='2']/android.view.ViewGroup[@index='2']'.</msg>
+<status status="PASS" starttime="20211205 17:04:23.969" endtime="20211205 17:04:24.645"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${INPUT-FIELD}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20211203 14:06:30.877" endtime="20211203 14:06:31.956"/>
+<status status="PASS" starttime="20211205 17:04:24.646" endtime="20211205 17:04:25.699"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${INPUT-FIELD}</arg>
 <arg>${INPUT2-DETAILS}[TextBad]</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:31.958" level="INFO">Typing text 'I feel very sad' into text field '//android.widget.EditText[@index=1]'</msg>
-<status status="PASS" starttime="20211203 14:06:31.956" endtime="20211203 14:06:32.018"/>
+<msg timestamp="20211205 17:04:25.702" level="INFO">Typing text 'I feel very sad' into text field '//android.widget.EditText[@index=1]'</msg>
+<status status="PASS" starttime="20211205 17:04:25.699" endtime="20211205 17:04:25.788"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${SUBMIT-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:32.020" level="INFO">Clicking element '//android.view.ViewGroup[@index=2]'.</msg>
-<status status="PASS" starttime="20211203 14:06:32.019" endtime="20211203 14:06:32.595"/>
-</kw>
-<status status="PASS" starttime="20211203 14:06:16.243" endtime="20211203 14:06:32.596"/>
-</test>
-<status status="PASS" starttime="20211203 14:06:16.238" endtime="20211203 14:06:32.598"/>
-</suite>
-<suite id="s1-s3" name="3Test" source="C:\Users\Jelen\ohjelmistoprojekti2\BLOOM-frontend\tests\3test.robot">
-<test id="s1-s3-t1" name="Test">
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=emulator-5554 appPackage=host.exp.exponent</arg>
-<arg>appActivity=host.exp.exponent.LauncherActivity automationName=Uiautomator2</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20211203 14:06:32.606" endtime="20211203 14:06:40.377"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>${NO-BUTTON}</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20211203 14:06:40.377" endtime="20211203 14:06:40.876"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${NO-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:40.877" level="INFO">Clicking element '//android.view.ViewGroup[@index='2']'.</msg>
-<status status="PASS" starttime="20211203 14:06:40.876" endtime="20211203 14:06:40.968"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>${NAVIGATION-BUTTON}</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20211203 14:06:40.968" endtime="20211203 14:06:42.082"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${NAVIGATION-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:42.084" level="INFO">Clicking element '//android.view.View[@index='1']/android.view.View[@index='0']'.</msg>
-<status status="PASS" starttime="20211203 14:06:42.083" endtime="20211203 14:06:42.240"/>
-</kw>
-<status status="PASS" starttime="20211203 14:06:32.605" endtime="20211203 14:06:42.240"/>
-</test>
-<status status="PASS" starttime="20211203 14:06:32.601" endtime="20211203 14:06:42.241"/>
-</suite>
-<suite id="s1-s4" name="4Test" source="C:\Users\Jelen\ohjelmistoprojekti2\BLOOM-frontend\tests\4test.robot">
-<test id="s1-s4-t1" name="Test">
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=emulator-5554 appPackage=host.exp.exponent</arg>
-<arg>appActivity=host.exp.exponent.LauncherActivity automationName=Uiautomator2</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20211203 14:06:42.270" endtime="20211203 14:06:49.894"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>${POINT-BUTTON}</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20211203 14:06:49.895" endtime="20211203 14:06:50.465"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${POINT-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:50.467" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
-<status status="PASS" starttime="20211203 14:06:50.465" endtime="20211203 14:06:50.612"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${POINT-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:50.615" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
-<status status="PASS" starttime="20211203 14:06:50.613" endtime="20211203 14:06:51.246"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${POINT-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:51.251" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
-<status status="PASS" starttime="20211203 14:06:51.248" endtime="20211203 14:06:52.030"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${POINT-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:52.032" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
-<status status="PASS" starttime="20211203 14:06:52.030" endtime="20211203 14:06:52.178"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${POINT-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:52.181" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
-<status status="PASS" starttime="20211203 14:06:52.179" endtime="20211203 14:06:52.791"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${POINT-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:52.794" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
-<status status="PASS" starttime="20211203 14:06:52.792" endtime="20211203 14:06:53.538"/>
+<msg timestamp="20211205 17:04:25.790" level="INFO">Clicking element '//android.view.ViewGroup[@index=2]'.</msg>
+<status status="PASS" starttime="20211205 17:04:25.788" endtime="20211205 17:04:26.392"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211203 14:06:58.543" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211203 14:06:53.539" endtime="20211203 14:06:58.543"/>
+<msg timestamp="20211205 17:04:31.398" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211205 17:04:26.393" endtime="20211205 17:04:31.398"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${NO-BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20211205 17:04:31.398" endtime="20211205 17:04:31.443"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${NO-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211205 17:04:31.446" level="INFO">Clicking element '//android.view.ViewGroup[@index='2']'.</msg>
+<status status="PASS" starttime="20211205 17:04:31.444" endtime="20211205 17:04:31.544"/>
+</kw>
+<status status="PASS" starttime="20211205 17:04:13.159" endtime="20211205 17:04:31.545"/>
+</test>
+<status status="PASS" starttime="20211205 17:04:13.155" endtime="20211205 17:04:31.547"/>
+</suite>
+<suite id="s1-s3" name="3pointsAndLogout" source="C:\Users\Jelen\ohjelmistoprojekti2\robotframworktests\tests\3pointsAndLogout.robot">
+<test id="s1-s3-t1" name="Points and logout">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554 appPackage=host.exp.exponent</arg>
+<arg>appActivity=host.exp.exponent.LauncherActivity automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211205 17:04:31.555" endtime="20211205 17:04:39.213"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${NAVIGATION-BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20211205 17:04:39.213" endtime="20211205 17:04:39.794"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${NAVIGATION-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211205 17:04:39.796" level="INFO">Clicking element '//android.view.View[@index='1']/android.view.View[@index='0']'.</msg>
+<status status="PASS" starttime="20211205 17:04:39.794" endtime="20211205 17:04:39.938"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${POINT-BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20211205 17:04:39.939" endtime="20211205 17:04:40.764"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${POINT-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211205 17:04:40.766" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
+<status status="PASS" starttime="20211205 17:04:40.764" endtime="20211205 17:04:40.926"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${POINT-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211205 17:04:40.928" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
+<status status="PASS" starttime="20211205 17:04:40.927" endtime="20211205 17:04:41.576"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${POINT-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211205 17:04:41.578" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
+<status status="PASS" starttime="20211205 17:04:41.576" endtime="20211205 17:04:42.374"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${POINT-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211205 17:04:42.376" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
+<status status="PASS" starttime="20211205 17:04:42.375" endtime="20211205 17:04:42.813"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${POINT-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211205 17:04:42.815" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
+<status status="PASS" starttime="20211205 17:04:42.813" endtime="20211205 17:04:43.441"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${POINT-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211205 17:04:43.443" level="INFO">Clicking element '//android.view.ViewGroup[@index='3']/android.view.ViewGroup[@index='1']'.</msg>
+<status status="PASS" starttime="20211205 17:04:43.442" endtime="20211205 17:04:44.260"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 17:04:49.269" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211205 17:04:44.261" endtime="20211205 17:04:49.269"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${LOGOUT-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211203 14:06:58.551" level="INFO">Clicking element '//android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='3']'.</msg>
-<status status="PASS" starttime="20211203 14:06:58.544" endtime="20211203 14:06:58.727"/>
+<msg timestamp="20211205 17:04:49.274" level="INFO">Clicking element '//android.view.ViewGroup[@index='0']/android.view.ViewGroup[@index='3']'.</msg>
+<status status="PASS" starttime="20211205 17:04:49.270" endtime="20211205 17:04:49.439"/>
 </kw>
-<status status="PASS" starttime="20211203 14:06:42.270" endtime="20211203 14:06:58.727"/>
+<status status="PASS" starttime="20211205 17:04:31.554" endtime="20211205 17:04:49.440"/>
 </test>
-<status status="PASS" starttime="20211203 14:06:42.243" endtime="20211203 14:06:58.729"/>
+<status status="PASS" starttime="20211205 17:04:31.549" endtime="20211205 17:04:49.444"/>
 </suite>
-<status status="PASS" starttime="20211203 14:05:59.836" endtime="20211203 14:06:58.731"/>
+<status status="PASS" starttime="20211205 17:03:58.387" endtime="20211205 17:04:49.446"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="1Login">Tests.1Login</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s2" name="2Flower">Tests.2Flower</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s3" name="3Test">Tests.3Test</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s4" name="4Test">Tests.4Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="2Input">Tests.2Input</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="3pointsAndLogout">Tests.3pointsAndLogout</stat>
 </suite>
 </statistics>
 <errors>
